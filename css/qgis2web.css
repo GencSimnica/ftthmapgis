@@ -219,4 +219,37 @@
                 2px 0px 0 #fafa08,
                 2px 1px 0 #fafa08,
                 2px 2px 0 #fafa08;
+
         }
+
+upda
+#map-title {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
+#info-box {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(255,255,255,0.9);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #444;
+  font-family: "Segoe UI", Arial, sans-serif;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  z-index: 9000;
+}
+update qgis2web.css
