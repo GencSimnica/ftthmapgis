@@ -14,6 +14,25 @@
         <link rel="stylesheet" href="css/MarkerCluster.Default.css">
         <link rel="stylesheet" href="css/leaflet.photon.css">
         <style>
+			#header-title {
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    padding: 15px 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    border-bottom: 1px solid #ddd;
+}
+
+#map {
+    margin-top: 70px !important;
+}
+
         html, body, #map {
             width: 100%;
             height: 100%;
@@ -24,6 +43,10 @@
         <title>Aplikimi i GIS-it ne dizajnimin dhe planifikimin e kabllit me fiber optik</title>
     </head>
     <body>
+		<div id="header-title">
+    <h1>Plani për Fiber FTTH Rhode</h1>
+</div>
+
         <div id="map-title">FTTH Rhoden</div>
 <div id="map"></div>
 
