@@ -252,8 +252,5 @@ upda
   box-shadow: 0 1px 4px rgba(0,0,0,0.15);
   z-index: 9000;
 }
-/* FSHEH L.control.layers (paneli standard i shtresave) */
-.leaflet-control-layers,
-.leaflet-control-layers-expanded {
-    display: none !important;
-}
+
+
