@@ -14,6 +14,31 @@
         <link rel="stylesheet" href="css/MarkerCluster.Default.css">
         <link rel="stylesheet" href="css/leaflet.photon.css">
         <style>
+			/* HEADER KONTAINERI – QENDËRZUAR */
+#header-title {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%); 
+    background: rgba(255, 255, 255, 0.95);
+    padding: 12px 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+    z-index: 9999;
+    border: 1px solid #ddd;
+}
+
+/* TEKSTI I TITULLIT */
+#header-title h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+    white-space: nowrap;
+}
+
 			/* KONTAINERI I TITULLIT */
 #header-title {
     position: absolute;
@@ -97,7 +122,6 @@
     </head>
     <body>
 		<div id="header-title">
-    <h1>Plani për Fiber FTTH Rhode</h1>
 </div>
 
         <div id="map-title">FTTH Rhoden</div>
