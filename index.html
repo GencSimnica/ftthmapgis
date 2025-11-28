@@ -14,73 +14,6 @@
         <link rel="stylesheet" href="css/MarkerCluster.Default.css">
         <link rel="stylesheet" href="css/leaflet.photon.css">
         <style>
-			/* HEADER KONTAINERI – QENDËRZUAR */
-#header-title {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%); 
-    background: rgba(255, 255, 255, 0.95);
-    padding: 12px 30px;
-    border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
-    z-index: 9999;
-    border: 1px solid #ddd;
-}
-
-/* TEKSTI I TITULLIT */
-#header-title h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 28px;
-    font-weight: 700;
-    color: #222;
-    text-align: center;
-    white-space: nowrap;
-}
-
-			/* KONTAINERI I TITULLIT */
-#header-title {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%); /* qendërzimi perfekt */
-    background: rgba(255, 255, 255, 0.95); 
-    padding: 10px 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    z-index: 9999;
-}
-
-/* TITULLI */
-#header-title h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 26px;
-    font-weight: 700;
-    color: #222;
-    text-align: center;
-}
-
-			#header-title {
-    width: 100%;
-    background: rgba(255,255,255,0.95);
-    padding: 15px 20px;
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: #333;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    border-bottom: 1px solid #ddd;
-}
-
-#map {
-    margin-top: 70px !important;
-}
-
         html, body, #map {
             width: 100%;
             height: 100%;
@@ -88,78 +21,12 @@
             margin: 0;
         }
         </style>
-		<style>
-    /* Trupi dhe faqja */
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    /* Div-i i hartës */
-    #map {
-        height: 100%;
-        width: 100%;
-    }
-
-    /* KUTIA E TITULLIT NË MES SIPËR */
-    #header-title {
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%); /* e qendërzon horizontalisht */
-        background: rgba(255, 255, 255, 0.95);
-        padding: 8px 24px;
-        border-radius: 10px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.25);
-        border: 1px solid #ddd;
-        z-index: 9999;
-    }
-
-    #header-title h1 {
-        margin: 0;
-        padding: 0;
-        font-size: 24px;
-        font-weight: 700;
-        color: #222;
-        text-align: center;
-        white-space: nowrap;
-    }
-</style>
-</style>
-
         <title>Aplikimi i GIS-it ne dizajnimin dhe planifikimin e kabllit me fiber optik</title>
-  </head>
-<body>
-
-    <div id="header-title">
-        <h1>Plani për Fiber FTTH Rhode</h1>
-    </div>
-
-    <div id="map"></div>
-
-    <!-- këtu vijojnë <script src="js/..."> etj -->
-
-
-        <div id="map-title">FTTH Rhoden</div>
-<div id="map"></div>
-#header-title {
-    text-align: left;
-    padding: 10px 20px;
-    background: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-}
-
-#header-title h1 {
-    font-size: 28px;     /* <-- ishte shumë më i madh, ulur tani */
-    margin: 0;
-    font-weight: 70;
-}
-
+    </head>
+    <body>
+        <div <div id="map-title">FTTH Rhoden</div>
+="map">
+        </div>
         <script src="js/qgis2web_expressions.js"></script>
         <script src="js/leaflet.js"></script>
         <script src="js/L.Control.Layers.Tree.min.js"></script>
