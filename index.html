@@ -20,109 +20,12 @@
             padding: 0;
             margin: 0;
         }
-			#header-title {
-    width: 100%;
-    padding: 15px 20px;
-    background: white;
-    font-size: 24px;
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-}
-
-#map {
-    margin-top: 70px;
-	/* LEGJENDA MODERNE */
-#legend {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 260px;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 12px;
-    padding: 15px;
-    box-shadow: 0px 4px 14px rgba(0,0,0,0.25);
-    font-family: Arial, sans-serif;
-    z-index: 9999;
-}
-
-#legend h3 {
-    font-size: 18px;
-    margin: 0 0 12px 0;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #eee;
-    font-weight: 700;
-}
-
-.legend-section-title {
-    margin-top: 10px;
-    font-weight: 700;
-    color: #333;
-    font-size: 14px;
-}
-
-.legend-item {
-    display: flex;
-    align-items: center;
-    margin: 4px 0;
-}
-
-.legend-color {
-    width: 20px;
-    height: 20px;
-    border-radius: 5px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-}
-
-.legend-label {
-    font-size: 14px;
-}
-
-}
-
         </style>
         <title>Aplikimi i GIS-it ne dizajnimin dhe planifikimin e kabllit me fiber optik</title>
     </head>
     <body>
-   <div id="header-title">Plani për Fiber FTTH Rhode</div>
+        <div id="map-title">FTTH Rhoden</div>
 <div id="map"></div>
-		<div id="legend">
-    <h3>Ngjyrat e Fibres</h3>
-
-    <div class="legend-section-title">Primare</div>
-
-    <div class="legend-item">
-        <span class="legend-color" style="background:#ff0000;"></span>
-        <span class="legend-label">KUQE</span>
-    </div>
-
-    <div class="legend-item">
-        <span class="legend-color" style="background:#0000ff;"></span>
-        <span class="legend-label">KALTËR</span>
-    </div>
-
-    <div class="legend-item">
-        <span class="legend-color" style="background:#ffff00;"></span>
-        <span class="legend-label">VERDHË</span>
-    </div>
-
-    <div class="legend-section-title">Dytësore</div>
-
-    <div class="legend-item">
-        <span class="legend-color" style="background:#ff8800;"></span>
-        <span class="legend-label">PORTOKALLE</span>
-    </div>
-
-    <div class="legend-item">
-        <span class="legend-color" style="background:#8000ff;"></span>
-        <span class="legend-label">VIOLETË</span>
-    </div>
-</div>
 
         <script src="js/qgis2web_expressions.js"></script>
         <script src="js/leaflet.js"></script>
@@ -1564,7 +1467,7 @@
             {label: '<img src="legend/ZonaeStudimit_2.png" /> Zona e Studimit', layer: layer_ZonaeStudimit_2},
             {label: 'Zonat e Grupuara<br /><table><tr><td style="text-align: center;"><img src="legend/ZonateGrupuara_1_10.png" /></td><td>1</td></tr><tr><td style="text-align: center;"><img src="legend/ZonateGrupuara_1_21.png" /></td><td>2</td></tr><tr><td style="text-align: center;"><img src="legend/ZonateGrupuara_1_32.png" /></td><td>3</td></tr><tr><td style="text-align: center;"><img src="legend/ZonateGrupuara_1_43.png" /></td><td>4</td></tr><tr><td style="text-align: center;"><img src="legend/ZonateGrupuara_1_54.png" /></td><td>5</td></tr><tr><td style="text-align: center;"><img src="legend/ZonateGrupuara_1_5.png" /></td><td></td></tr></table>', layer: layer_ZonateGrupuara_1},
             {label: "OSM Standard", layer: layer_OSMStandard_0},]
-       // var lay = L.control.layers.tree(null, overlaysTree, {
+        var lay = L.control.layers.tree(null, overlaysTree,{
             //namedToggle: true,
             //selectorBack: false,
             //closedSymbol: '&#8862; &#x1f5c0;',
@@ -1573,7 +1476,7 @@
             //expandAll: 'Expand all',
             collapsed: false, 
         });
-        // lay.addTo(map);
+        lay.addTo(map);
 		document.addEventListener("DOMContentLoaded", function() {
             // set new Layers List height which considers toggle icon
             function newLayersListHeight() {
